@@ -1,8 +1,10 @@
-﻿using OpenQA.Selenium;
+﻿using Newtonsoft.Json;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -11,7 +13,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web.Helpers;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Linq;
 using Keys = OpenQA.Selenium.Keys;
 
@@ -27,25 +31,63 @@ namespace Bot
             CheckForIllegalCrossThreadCalls = true;
 
 
+
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            StreamWriter file = File.CreateText(@"d:\tesx.json");
+            var text = JsonConvert.SerializeObject(firefox.Manage().Cookies.AllCookies, Newtonsoft.Json.Formatting.None);
+            file.Write(text);
+            file.Close();
+
             if (firefox != null) firefox.Quit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             InitFirefox();
+            firefox.Navigate().GoToUrl("https://www.facebook.com/");
+            string path = @"d:\cook.json";
+            StreamReader stream = File.OpenText(path);
+            JsonTextReader reader = new JsonTextReader(stream);
+            JsonSerializer serializer = new JsonSerializer();
+            dynamic load = serializer.Deserialize(reader);
+            stream.Close();
+
+            foreach (dynamic item in load)
+            {
+                //firefox.Manage().Cookies.AddCookie(item);
+                //richTextBox_text.Text = item.name;
+                string name = item.name;
+                string value = item.value;
+                Cookie ck = new Cookie(name, value);
+                firefox.Manage().Cookies.AddCookie(ck);
+            }
+
+            firefox.Navigate().Refresh();
+
+            //StreamReader reader = new StreamReader(path);
+            //string data = reader.ReadToEnd();
+            //reader.Close();           
+            //dynamic cook = JsonConvert.DeserializeObject(File.ReadAllText(data));
+
+
+
+
+
+
         }
 
         public void InitFirefox()
         {
             FirefoxDriverService servise = FirefoxDriverService.CreateDefaultService();
             servise.HideCommandPromptWindow = true;
-            
+
             FirefoxOptions options = new FirefoxOptions();
             firefox = new FirefoxDriver(servise, options);
-            
+
+
+
         }
 
         //public void PotokWeather()
@@ -56,14 +98,23 @@ namespace Bot
 
         private void button_google_Click_1(object sender, EventArgs e)
         {
+
+
             firefox.Navigate().GoToUrl("https://www.google.com/");
+            firefox.Navigate().GoToUrl("https://www.facebook.com/");
+
+
+
+
+
+
         }
         private void button_enter_Click_1(object sender, EventArgs e)
         {
             string textPoisk = richTextBox_search.Text;
             firefox.FindElement(By.XPath("//input[@class = 'gLFyf gsfi']")).SendKeys(textPoisk);
             firefox.FindElement(By.XPath("//input[@class = 'gLFyf gsfi']")).SendKeys(Keys.Enter);
-            Thread.Sleep(2000);          
+            Thread.Sleep(2000);
         }
 
 
@@ -71,9 +122,9 @@ namespace Bot
         string path = "https://sinoptik.ua/";
         private void weather_button_Click(object sender, EventArgs e)
         {
-            
+
             string name = "погода";
-      
+
             Thread.Sleep(1000);
             firefox.Navigate().GoToUrl("https://www.google.com/");
             Thread.Sleep(1000);
@@ -90,19 +141,21 @@ namespace Bot
             //    if (element.Text.IndexOf(path) != -1)
             //    {
             //        richTextBox_text.Text += element.Text + "\n";
-                    
+
             //        break;
             //    }
             //}
+
+
         }
 
 
 
-       
+
         private void buttonLeft_Click(object sender, EventArgs e)
         {
             Tabbing.GoLeft(firefox);
-           
+
         }
         private void buttonAddWin_Click(object sender, EventArgs e)
         {
@@ -115,35 +168,22 @@ namespace Bot
         private void buttonRight_Click(object sender, EventArgs e)
         {
             Tabbing.GoRigth(firefox);
-            
+
         }
 
-        private void buttonChat_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            firefox.Navigate().GoToUrl("https://lfyou.com.ua/");
-            Thread.Sleep(2000);
-            firefox.FindElement(By.XPath("//*[@id=\"chat-ctrl\"]/section[2]/section[2]/div[1]/div/div[2]/div/button[1]")).Click();
-      
-            Thread.Sleep(500);
-            firefox.FindElement(By.XPath("//*[@id=\"chat-ctrl\"]/section[2]/section[2]/div[2]/div/div[2]/div/button[2]")).Click();
 
-            Thread.Sleep(1000);
-            firefox.FindElement(By.XPath("//*[@id=\"chat-ctrl\"]/section[2]/section[3]/div[1]/div/div[2]/div/button[4]")).Click();
-            firefox.FindElement(By.XPath("//*[@id=\"chat-ctrl\"]/section[2]/section[3]/div[2]/div/div[2]/div/button[4]")).Click();
+            
 
-            Thread.Sleep(1500);
-            firefox.FindElement(By.XPath("//*[@id=\"chat-ctrl\"]/section[2]/section[4]/div/div/div[2]/div/div[1]/button")).Click();
+            //DateTime time = new DateTime(2017, 03, 22, 23, 02, 03);
+            
+            //Browser.Manage().Cookies.AddCookie(ck);
 
-            Thread.Sleep(2000);
-            firefox.FindElement(By.XPath("//*[@id=\"chat-ctrl\"]/section[2]/section[6]/div/button")).Click();
-           
+            //Cookie cookie = new Cookie(item.name, item.value);
+            
 
 
-            Thread.Sleep(20000);
-            firefox.FindElement(By.XPath("/html/body/div[1]/div/div/div[3]/button[2]")).Click();
-
-            Thread.Sleep(9000);
-            firefox.FindElement(By.XPath("//*[@id=\"recaptcha-anchor\"]/div[4]")).Click();
 
         }
     }

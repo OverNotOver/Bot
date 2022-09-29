@@ -38,12 +38,12 @@
             this.buttonRight = new System.Windows.Forms.Button();
             this.buttonLeft = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonChat = new System.Windows.Forms.Button();
             this.richTextBox_search = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
             this.buttonAddWin = new System.Windows.Forms.Button();
             this.richTextBox_text = new System.Windows.Forms.RichTextBox();
-            this.buttonChat = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -197,6 +197,18 @@
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // buttonChat
+            // 
+            this.buttonChat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonChat.Location = new System.Drawing.Point(165, 0);
+            this.buttonChat.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonChat.Name = "buttonChat";
+            this.buttonChat.Size = new System.Drawing.Size(166, 41);
+            this.buttonChat.TabIndex = 3;
+            this.buttonChat.Text = "Чат";
+            this.buttonChat.UseVisualStyleBackColor = true;
+            // 
             // richTextBox_search
             // 
             this.richTextBox_search.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -233,6 +245,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "СПИЗДИТЬ";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // buttonAddWin
             // 
@@ -256,19 +269,6 @@
             this.richTextBox_text.Size = new System.Drawing.Size(443, 327);
             this.richTextBox_text.TabIndex = 1;
             this.richTextBox_text.Text = "";
-            // 
-            // buttonChat
-            // 
-            this.buttonChat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonChat.Location = new System.Drawing.Point(165, 0);
-            this.buttonChat.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonChat.Name = "buttonChat";
-            this.buttonChat.Size = new System.Drawing.Size(166, 41);
-            this.buttonChat.TabIndex = 3;
-            this.buttonChat.Text = "Чат";
-            this.buttonChat.UseVisualStyleBackColor = true;
-            this.buttonChat.Click += new System.EventHandler(this.buttonChat_Click);
             // 
             // Form1
             // 
