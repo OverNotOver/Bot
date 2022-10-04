@@ -28,262 +28,283 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button_enter = new System.Windows.Forms.Button();
+            this.AddWindow = new System.Windows.Forms.Button();
+            this.enter = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.weather_button = new System.Windows.Forms.Button();
-            this.button_google = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonRight = new System.Windows.Forms.Button();
-            this.buttonLeft = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
-            this.buttonChat = new System.Windows.Forms.Button();
+            this.LeftWindow = new System.Windows.Forms.Button();
+            this.RigthWindow = new System.Windows.Forms.Button();
+            this.BackWebBrowser = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.richTextBox_search = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.buttonAddWin = new System.Windows.Forms.Button();
-            this.richTextBox_text = new System.Windows.Forms.RichTextBox();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.Fa1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox_text, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(443, 453);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.93703F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.06297F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.button_enter, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.AddWindow, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.enter, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.richTextBox_search, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(443, 126);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(616, 113);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // button_enter
+            // AddWindow
             // 
-            this.button_enter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_enter.Location = new System.Drawing.Point(331, 0);
-            this.button_enter.Margin = new System.Windows.Forms.Padding(0);
-            this.button_enter.Name = "button_enter";
-            this.button_enter.Size = new System.Drawing.Size(112, 44);
-            this.button_enter.TabIndex = 1;
-            this.button_enter.Text = "ENTER";
-            this.button_enter.UseVisualStyleBackColor = true;
-            this.button_enter.Click += new System.EventHandler(this.button_enter_Click_1);
+            this.AddWindow.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.AddWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddWindow.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.AddWindow.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.AddWindow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
+            this.AddWindow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.AddWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddWindow.ForeColor = System.Drawing.Color.White;
+            this.AddWindow.Location = new System.Drawing.Point(461, 40);
+            this.AddWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.AddWindow.Name = "AddWindow";
+            this.AddWindow.Size = new System.Drawing.Size(155, 73);
+            this.AddWindow.TabIndex = 1;
+            this.AddWindow.Text = "Добавить вкладку";
+            this.AddWindow.UseVisualStyleBackColor = false;
+            this.AddWindow.Click += new System.EventHandler(this.AddWindow_Click);
+            // 
+            // enter
+            // 
+            this.enter.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.enter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.enter.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.enter.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.enter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
+            this.enter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.enter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.enter.ForeColor = System.Drawing.Color.White;
+            this.enter.Location = new System.Drawing.Point(461, 0);
+            this.enter.Margin = new System.Windows.Forms.Padding(0);
+            this.enter.Name = "enter";
+            this.enter.Size = new System.Drawing.Size(155, 40);
+            this.enter.TabIndex = 1;
+            this.enter.Text = "ENTER";
+            this.enter.UseVisualStyleBackColor = false;
+            this.enter.Click += new System.EventHandler(this.enter_Click);
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.weather_button, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.button_google, 0, 1);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 211F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.buttonChat, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.BackWebBrowser, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 44);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 40);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(331, 82);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(461, 73);
             this.tableLayoutPanel3.TabIndex = 3;
-            // 
-            // weather_button
-            // 
-            this.weather_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weather_button.Location = new System.Drawing.Point(0, 0);
-            this.weather_button.Margin = new System.Windows.Forms.Padding(0);
-            this.weather_button.Name = "weather_button";
-            this.weather_button.Size = new System.Drawing.Size(165, 41);
-            this.weather_button.TabIndex = 0;
-            this.weather_button.Text = "ПОГОДА";
-            this.weather_button.UseVisualStyleBackColor = true;
-            this.weather_button.Click += new System.EventHandler(this.weather_button_Click);
-            // 
-            // button_google
-            // 
-            this.button_google.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_google.Location = new System.Drawing.Point(0, 41);
-            this.button_google.Margin = new System.Windows.Forms.Padding(0);
-            this.button_google.Name = "button_google";
-            this.button_google.Size = new System.Drawing.Size(165, 41);
-            this.button_google.TabIndex = 1;
-            this.button_google.Text = "GOOGLE";
-            this.button_google.UseVisualStyleBackColor = true;
-            this.button_google.Click += new System.EventHandler(this.button_google_Click_1);
             // 
             // tableLayoutPanel5
             // 
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Controls.Add(this.buttonRight, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.buttonLeft, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.buttonBack, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(165, 41);
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.LeftWindow, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.RigthWindow, 1, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(250, 35);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(166, 41);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(211, 38);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
-            // buttonRight
+            // LeftWindow
             // 
-            this.buttonRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRight.Location = new System.Drawing.Point(110, 0);
-            this.buttonRight.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(56, 41);
-            this.buttonRight.TabIndex = 1;
-            this.buttonRight.Text = ">";
-            this.buttonRight.UseVisualStyleBackColor = true;
-            this.buttonRight.Click += new System.EventHandler(this.buttonRight_Click);
+            this.LeftWindow.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.LeftWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LeftWindow.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.LeftWindow.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.LeftWindow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
+            this.LeftWindow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.LeftWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LeftWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LeftWindow.ForeColor = System.Drawing.Color.White;
+            this.LeftWindow.Location = new System.Drawing.Point(0, 0);
+            this.LeftWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.LeftWindow.Name = "LeftWindow";
+            this.LeftWindow.Size = new System.Drawing.Size(105, 38);
+            this.LeftWindow.TabIndex = 0;
+            this.LeftWindow.Text = "<";
+            this.LeftWindow.UseVisualStyleBackColor = false;
+            this.LeftWindow.Click += new System.EventHandler(this.LeftWindow_Click);
             // 
-            // buttonLeft
+            // RigthWindow
             // 
-            this.buttonLeft.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLeft.Location = new System.Drawing.Point(55, 0);
-            this.buttonLeft.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(55, 41);
-            this.buttonLeft.TabIndex = 0;
-            this.buttonLeft.Text = "<";
-            this.buttonLeft.UseVisualStyleBackColor = true;
-            this.buttonLeft.Click += new System.EventHandler(this.buttonLeft_Click);
+            this.RigthWindow.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.RigthWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RigthWindow.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.RigthWindow.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.RigthWindow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
+            this.RigthWindow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.RigthWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RigthWindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RigthWindow.ForeColor = System.Drawing.Color.White;
+            this.RigthWindow.Location = new System.Drawing.Point(105, 0);
+            this.RigthWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.RigthWindow.Name = "RigthWindow";
+            this.RigthWindow.Size = new System.Drawing.Size(106, 38);
+            this.RigthWindow.TabIndex = 1;
+            this.RigthWindow.Text = ">";
+            this.RigthWindow.UseVisualStyleBackColor = false;
+            this.RigthWindow.Click += new System.EventHandler(this.RigthWindow_Click);
             // 
-            // buttonBack
+            // BackWebBrowser
             // 
-            this.buttonBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonBack.Location = new System.Drawing.Point(0, 0);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(55, 41);
-            this.buttonBack.TabIndex = 2;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.BackWebBrowser.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackWebBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BackWebBrowser.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BackWebBrowser.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.BackWebBrowser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
+            this.BackWebBrowser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.BackWebBrowser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackWebBrowser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BackWebBrowser.ForeColor = System.Drawing.Color.White;
+            this.BackWebBrowser.Location = new System.Drawing.Point(250, 0);
+            this.BackWebBrowser.Margin = new System.Windows.Forms.Padding(0);
+            this.BackWebBrowser.Name = "BackWebBrowser";
+            this.BackWebBrowser.Size = new System.Drawing.Size(211, 35);
+            this.BackWebBrowser.TabIndex = 2;
+            this.BackWebBrowser.Text = "Back";
+            this.BackWebBrowser.UseVisualStyleBackColor = false;
+            this.BackWebBrowser.Click += new System.EventHandler(this.BackWebBrowser_Click);
             // 
-            // buttonChat
+            // button1
             // 
-            this.buttonChat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonChat.Location = new System.Drawing.Point(165, 0);
-            this.buttonChat.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonChat.Name = "buttonChat";
-            this.buttonChat.Size = new System.Drawing.Size(166, 41);
-            this.buttonChat.TabIndex = 3;
-            this.buttonChat.Text = "Чат";
-            this.buttonChat.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 35);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "START";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // richTextBox_search
             // 
+            this.richTextBox_search.BackColor = System.Drawing.Color.White;
             this.richTextBox_search.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox_search.Location = new System.Drawing.Point(0, 0);
             this.richTextBox_search.Margin = new System.Windows.Forms.Padding(0);
             this.richTextBox_search.Name = "richTextBox_search";
-            this.richTextBox_search.Size = new System.Drawing.Size(331, 44);
+            this.richTextBox_search.Size = new System.Drawing.Size(461, 40);
             this.richTextBox_search.TabIndex = 4;
             this.richTextBox_search.Text = "";
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackgroundImage = global::Bot.Properties.Resources.fbImg;
+            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 407);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(3, 116);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(601, 73);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.button4, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.buttonAddWin, 0, 1);
+            this.tableLayoutPanel4.ColumnCount = 5;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.Fa1, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(331, 44);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 35);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(112, 82);
-            this.tableLayoutPanel4.TabIndex = 5;
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(250, 38);
+            this.tableLayoutPanel4.TabIndex = 4;
             // 
-            // button4
+            // Fa1
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 40);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "СПИЗДИТЬ";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // buttonAddWin
-            // 
-            this.buttonAddWin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonAddWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAddWin.Location = new System.Drawing.Point(0, 40);
-            this.buttonAddWin.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonAddWin.Name = "buttonAddWin";
-            this.buttonAddWin.Size = new System.Drawing.Size(112, 42);
-            this.buttonAddWin.TabIndex = 1;
-            this.buttonAddWin.Text = "+WIN";
-            this.buttonAddWin.UseVisualStyleBackColor = true;
-            this.buttonAddWin.Click += new System.EventHandler(this.buttonAddWin_Click);
-            // 
-            // richTextBox_text
-            // 
-            this.richTextBox_text.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox_text.Location = new System.Drawing.Point(0, 126);
-            this.richTextBox_text.Margin = new System.Windows.Forms.Padding(0);
-            this.richTextBox_text.Name = "richTextBox_text";
-            this.richTextBox_text.Size = new System.Drawing.Size(443, 327);
-            this.richTextBox_text.TabIndex = 1;
-            this.richTextBox_text.Text = "";
+            this.Fa1.Location = new System.Drawing.Point(3, 3);
+            this.Fa1.Name = "Fa1";
+            this.Fa1.Size = new System.Drawing.Size(44, 23);
+            this.Fa1.TabIndex = 0;
+            this.Fa1.Text = "Fa1";
+            this.Fa1.UseVisualStyleBackColor = true;
+            this.Fa1.Click += new System.EventHandler(this.Fa1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 453);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(616, 407);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "FarmBot";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -291,22 +312,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button_enter;
+        private System.Windows.Forms.Button AddWindow;
+        private System.Windows.Forms.Button enter;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button weather_button;
-        private System.Windows.Forms.RichTextBox richTextBox_search;
-        private System.Windows.Forms.RichTextBox richTextBox_text;
-        private System.Windows.Forms.Button button_google;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Button buttonLeft;
-        private System.Windows.Forms.Button buttonRight;
-        private System.Windows.Forms.Button buttonAddWin;
-        private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Button buttonChat;
+        private System.Windows.Forms.Button LeftWindow;
+        private System.Windows.Forms.Button RigthWindow;
+        private System.Windows.Forms.Button BackWebBrowser;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.RichTextBox richTextBox_search;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button Fa1;
     }
 }
 
